@@ -56,8 +56,27 @@ h5 {
 
 /* info paragraphs */
 p {
-    font-size: 24px;
-    letter-spacing: 5px;
+    /* 24 */
+    font-size: 18px; 
+    letter-spacing: 2px;
+}
+
+/*****************************************************/
+/* specific stuff */
+/*****************************************************/
+
+.center-this {
+    text-align: center;
+}
+
+.underline-this {
+    border-bottom: 3px solid #d3f100;
+    padding-bottom: 5px;
+}
+
+.underline-this-link {
+    border-bottom: 2px solid #d3f100;
+    padding-bottom: 2px;
 }
 
 /*****************************************************/
@@ -97,29 +116,24 @@ p {
 .navbar-custom .navbar-text,
 .brand-name .gomezja {
 	color: #d3f100;
-	font-size: 24px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 400;
 }
 /* navbar link color */
 .navbar-custom .navbar-nav .nav-link {
     color: #d3f100;
-    font-weight: 600;
-	font-size: 18px;
+    font-weight: 400;
+	font-size: 20px;
 }
 /* navbar active and hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link,
-.brand-name .gomezja:hover {
+.navbar-custom .nav-item.active .nav-link {
     color: #9eb300;
-    /* text-decoration: underline; */
+    border-bottom: 2px solid #9eb300;
+    padding-bottom: 2px;
 }
 
-#homepage-top {
-    /* height: 50%; */
-}
-
-#homepage-bottom {
-    /* height: 50%; */
+.navbar-custom .nav-item:hover .nav-link {
+    color: #9eb300;
 }
 
 /*****************************************************/
@@ -129,10 +143,22 @@ p {
 /* custom button */
 .btn-custom {
     background-color: #d3f100;
+    color: #404040;
     width: 254px;
     height: 60px;
+    border-radius: 5px;
 
     font-size: 28px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 4px #404040;
+    /* box-shadow: -1px -1px 2px #404040; */
+}
+
+.btn-custom:hover {
+    color: white;
+    box-shadow: 0 0 8px #404040;
 }
 
 /*****************************************************/
@@ -144,16 +170,6 @@ p {
     text-align: center;
     color: #d3f100;
  }
- 
- .center-this {
-     text-align: center;
- }
-
- .underline-this {
-     border-bottom: 3px solid #d3f100;
-     padding-bottom: 5px;
- }
-
 
 /*****************************************************/
 /* circle stuff */
@@ -180,4 +196,16 @@ p {
 .circle h4 {
     vertical-align: middle;
     display: table-cell;
+}
+
+#homepage-top {
+    height: 240px;
+}
+
+#homepage-bottom {
+    height: 240px;
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px #737373;
 }
