@@ -1,0 +1,126 @@
+/*all content*/
+body, html {
+	height: 100%;
+	
+	/* font stuff */
+	font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: #404040;
+}
+
+/*****************************************************/
+/* custom header stuff */
+/*****************************************************/
+
+/* homepage title */
+h1 {
+    font-size: 54px;
+    font-weight: 700;
+    color: white;
+}
+
+/* homepage intro */
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/* topic header */
+h3 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+/* characteristic header */
+h4 {
+    font-size: 24px;
+    color: #d3f100;
+}
+
+/* minor text */
+h5 {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+/* info paragraphs */
+p {
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+/*****************************************************/
+/* custom navbar stuff */
+/*****************************************************/
+
+/* navbar background color */
+.navbar-custom {
+	background-color: #404040;
+	border-bottom: 3px solid #d3f100;
+}
+/* navbar brand text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text,
+.brand-name .gomezja {
+	color: #d3f100;
+	font-size: 24px;
+	font-weight: 600;
+}
+/* navbar link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #d3f100;
+    font-weight: 600;
+	font-size: 18px;
+}
+/* navbar active and hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link,
+.brand-name .gomezja:hover {
+    color: #9eb300;
+    /* text-decoration: underline; */
+}
+
+/*****************************************************/
+/* custom color stuff */
+/*****************************************************/
+
+/* green color */
+color-one {
+    background-color: #d3f100;
+}
+
+/* dark gray color */
+color-two {
+    background-color: #404040;
+}
+
+/* light gray color */
+color-three {
+    background-color: #737373;
+}
+
+/*****************************************************/
+/* custom button stuff */
+/*****************************************************/
+
+/* custom button */
+.btn-custom {
+    background-color: #d3f100;
+    width: 254px;
+    height: 60px;
+
+    font-size: 28px;
+}
+
+/*****************************************************/
+/* custom footer stuff */
+/*****************************************************/
+
+/* page footer */
+.footer {
+    text-align: center;
+    color: #d3f100;
+ }
