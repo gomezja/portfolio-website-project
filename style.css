@@ -17,14 +17,22 @@ h1 {
     font-size: 54px;
     font-weight: 700;
     color: white;
+
+    padding-bottom: 20px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /* homepage intro */
 h2 {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 400;
     color: white;
     letter-spacing: 5px;
+    padding-top: 20px;
 }
 
 /* topic header */
@@ -50,6 +58,29 @@ h5 {
 p {
     font-size: 24px;
     letter-spacing: 5px;
+}
+
+/*****************************************************/
+/* custom color stuff */
+/*****************************************************/
+
+/* green color */
+.color-one {
+    background-color: #d3f100;
+}
+
+.text-color-one {
+    color: #d3f100;
+}
+
+/* dark gray color */
+.color-two {
+    background-color: #404040;
+}
+
+/* light gray color */
+.color-three {
+    background-color: #737373;
 }
 
 /*****************************************************/
@@ -83,23 +114,12 @@ p {
     /* text-decoration: underline; */
 }
 
-/*****************************************************/
-/* custom color stuff */
-/*****************************************************/
-
-/* green color */
-color-one {
-    background-color: #d3f100;
+#homepage-top {
+    /* height: 50%; */
 }
 
-/* dark gray color */
-color-two {
-    background-color: #404040;
-}
-
-/* light gray color */
-color-three {
-    background-color: #737373;
+#homepage-bottom {
+    /* height: 50%; */
 }
 
 /*****************************************************/
@@ -124,3 +144,40 @@ color-three {
     text-align: center;
     color: #d3f100;
  }
+ 
+ .center-this {
+     text-align: center;
+ }
+
+ .underline-this {
+     border-bottom: 3px solid #d3f100;
+     padding-bottom: 5px;
+ }
+
+
+/*****************************************************/
+/* circle stuff */
+/*****************************************************/
+
+.block {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.circle {
+    height: 110px;
+    width: 110px;
+    margin: 20px auto;
+
+    background: #404040;
+    display: table;
+
+    border-radius: 100px;
+    -moz-border-radius: 100px; 
+    -webkit-border-radius: 100px; 
+}
+
+.circle h4 {
+    vertical-align: middle;
+    display: table-cell;
+}
