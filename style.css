@@ -17,6 +17,7 @@ h1 {
     font-size: 54px;
     font-weight: 700;
     color: white;
+    text-shadow: 2px 2px #404040, 0 0 10px #404040;
 
     padding-bottom: 20px;
 
@@ -31,6 +32,7 @@ h2 {
     font-size: 26px;
     font-weight: 400;
     color: white;
+    text-shadow: 2px 2px #404040, 0 0 10px #404040;
     letter-spacing: 5px;
     padding-top: 20px;
 }
@@ -79,16 +81,20 @@ p {
     padding-bottom: 2px;
 }
 
-#homepage-top {
-    height: 240px;
-}
-
-#homepage-bottom {
-    height: 240px;
+.py-custom {
+    padding: 17px 0;
 }
 
 .box-shadow {
     box-shadow: 0 0 10px #737373;
+}
+
+.down-arrow {
+    /* padding-bottom: 10px; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 /*****************************************************/
@@ -128,27 +134,32 @@ p {
 	background-color: #404040;
 	border-bottom: 3px solid #d3f100;
 }
+
 /* navbar brand text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text,
+.navbar-custom .navbar-nav .nav-link, 
 .brand-name .gomezja {
 	color: #d3f100;
 	font-size: 20px;
 	font-weight: 400;
 }
+
 /* navbar link color */
-.navbar-custom .navbar-nav .nav-link {
+/* .navbar-custom .navbar-nav .nav-link {
     color: #d3f100;
     font-weight: 400;
 	font-size: 20px;
-}
-/* navbar active and hovered links */
+} */
+
+/* navbar active links */
 .navbar-custom .nav-item.active .nav-link {
     color: #9eb300;
     border-bottom: 2px solid #9eb300;
     padding-bottom: 2px;
 }
 
+/* navbar hovered links */
 .navbar-custom .nav-item:hover .nav-link {
     color: #9eb300;
 }
@@ -158,9 +169,11 @@ p {
 /*****************************************************/
 
 /* portfolio example image */
-/* #img-homepage {
-
-} */
+#img-homepage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
 /*****************************************************/
 /* custom button stuff */
@@ -219,13 +232,21 @@ p {
 /*****************************************************/
 
 /* page footer */
-.footer {
-    text-align: center;
+.footer a {
+    font-size: 20px;
     color: #d3f100;
+    text-decoration: none;
+    padding: 0 5px;
+ }
+
+ .footer a:hover {
+    color: #9eb300;
+    text-decoration: none;
  }
 
  #to-top {
      color: #404040;
      font-size: 18px;
      text-decoration: none;
+     transition-timing-function: ease;
  }

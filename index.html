@@ -14,59 +14,61 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
+
 <body>
-    <!-- my navbar -->	
-    <nav class="navbar navbar-expand-sm navbar-custom">
-        <div class="container">
-            <a class="navbar-brand active" href="index.html">gomezja</a>
-        
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <span style="color: #d3f100"><i class="fas fa-bars fa-lg"></i></span>
-            </button>
+    <div class="h-100 color-two">
+        <!-- my navbar -->	
+        <nav id="top" class="navbar navbar-expand-sm navbar-custom">
+            <div class="container">
+                <a class="navbar-brand active" href="index.html">gomezja</a>
+            
+                <button class="navbar-toggler py-custom" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-color-one"><i class="fas fa-bars fa-lg"></i></span>
+                </button>
 
-            <div class="collapse navbar-collapse py-2" id="navbarsExample03">
-                <!-- left side of navbar -->
-                <ul class="navbar-nav mr-auto">	
-                    <li class="nav-item px-lg-4">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
+                <div class="collapse navbar-collapse py-2" id="navbarsExample03"> 
 
-                    <li class="nav-item px-lg-4">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+                    <!-- left side of navbar -->
+                    <ul class="navbar-nav mr-auto">	
+                        <li class="nav-item px-sm-4">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
 
-                <!-- right side of navbar -->
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item px-lg-4">
-                        <a class="nav-link" href="https://www.linkedin.com/in/gomezja/"><i class="fab fa-linkedin"></i></a>
-                    </li>
+                        <li class="nav-item px-sm-4">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
 
-                    <li class="nav-item px-lg-4">
-                        <a class="nav-link" href="https://github.com/gomezja"><i class="fab fa-github"></i></i></a>
-                    </li>
-                </ul>
+                    <!-- right side of navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-sm-4">
+                            <a class="nav-link" href="https://www.linkedin.com/in/gomezja/"><i class="fab fa-linkedin"></i></a>
+                        </li>
+
+                        <li class="nav-item px-sm-4">
+                            <a class="nav-link" href="https://github.com/gomezja"><i class="fab fa-github"></i></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- homepage intro -->
-    <div class="container-fluid box-shadow">
-        <div class="row text-center">
-            <div id="homepage-top" class="col-12 color-two">
-                <h1>gomezja.com</h1>
-            </div>
+        <div class="container-fluid box-shadow" style="height: calc(100% - 81px)">
+            <div class="row justify-content-center text-center" style="height: 100%">
+                <div id="homepage-top" class="col-12">
+                    <h1>gomezja.com</h1>
+                </div>
 
-            <div id="homepage-bottom" class="col-12 color-three">
-                <h2>A Website Created by Jesus Gomez</h2>
-                <a href="#portfolio"><i class="fas fa-angle-down fa-3x text-color-four"></i></a>
+                <div id="homepage-bottom" class="col-12 color-three">
+                    <h2>A Website Created by Jesus Gomez</h2>
+                    <a href="#portfolio" class="down-arrow"><i class="fas fa-angle-down fa-3x text-color-one"></i></a>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- portfolio section -->
-    <div id="portfolio" class="container py-5">
+    <div id="portfolio" class="container my-4 py-5">
         <div class="row">
             <div class="col-md-6">
                 <h3 class="underline-this">Portfolio</h3>
@@ -81,7 +83,9 @@
             </div>
 
             <div class="col-md-6">
-                
+                <div id="img-homepage">
+                    <img class="img-fluid mx-auto box-shadow" src="img-sample.png" alt="Sample Screenshot">
+                </div>
             </div>
         </div>
     </div>
@@ -119,7 +123,7 @@
     </div>
 
     <!-- about section -->
-	<div class="container py-5">
+	<div class="container my-4 py-5">
         <div class="row">
             <div class="col-12">
                 <h3 class="center-this underline-this">About Me!</h3>
@@ -152,16 +156,32 @@
     <div class="container">
         <div class="row">
             <div class="col-12 pb-4 text-right">
-                <a id="to-top" href="#portfolio">Back to the Top <i class="fas fa-long-arrow-alt-up"></i></a>
+                <a id="to-top" href="#top">Back to the Top <i class="fas fa-long-arrow-alt-up"></i></a>
             </div>
         </div>
     </div>
 
     <!-- footer -->
-	<div class="footer container-fluid box-shadow color-two">
-        <div class="row rem-decor">
-            <div class="col-md-12 py-4 brand-name">
-                <a class="gomezja" href="index.html">gomezja.com</a>
+	<div class="footer container-fluid py-4 box-shadow color-two">
+        <div class="row text-center justify-content-around">
+            <div class="col-12">
+                <a href="#">gomezja.com</a>
+            </div>
+        </div>
+
+        <div class="row text-center pt-2">
+            <div class="col-12">
+                    <a href="#">Portfolio</a>
+
+                    <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-12">
+                    <a href="https://www.linkedin.com/in/gomezja/"><i class="fab fa-linkedin"></i></a>
+
+                    <a href="https://github.com/gomezja"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </div>
