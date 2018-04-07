@@ -126,6 +126,9 @@ p {
     color: white;
 }
 
+.color-four {
+    background-color: #f2f2f2;
+}
 /*****************************************************/
 /* custom navbar stuff */
 /*****************************************************/
@@ -241,7 +244,7 @@ p {
     padding: 0 5px;
  }
 
- .footer a:hover {
+  a:hover {
     color: #9eb300;
     text-decoration: none;
  }
@@ -258,7 +261,6 @@ p {
 /*****************************************************/
 
 .description {
-    background-color: #f2f2f2;
     text-align: center;
     padding: 25px;
 }
