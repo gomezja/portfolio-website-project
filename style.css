@@ -39,9 +39,9 @@ h2 {
 
 /* topic header */
 h3 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 600;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 /* characteristic header */
@@ -52,7 +52,8 @@ h4 {
 
 /* minor text */
 h5 {
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 20px;
     letter-spacing: 3px;
 }
 
@@ -86,7 +87,7 @@ p {
 }
 
 .box-shadow {
-    box-shadow: 0 0 10px #737373;
+    box-shadow: 0 0 5px #737373;
 }
 
 .down-arrow {
@@ -160,7 +161,8 @@ p {
 }
 
 /* navbar hovered links */
-.navbar-custom .nav-item:hover .nav-link {
+.navbar-custom .nav-item:hover .nav-link,
+.navbar-custom .navbar-brand:hover {
     color: #9eb300;
 }
 
@@ -250,3 +252,27 @@ p {
      text-decoration: none;
      transition-timing-function: ease;
  }
+
+ /*****************************************************/
+/* custom footer stuff */
+/*****************************************************/
+
+.description {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 25px;
+}
+
+/* .porfolio-pic {
+    background-image: url("img-sample.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 200px;
+    height: auto;
+} */
+
+.no-padding {
+    padding: 2%;
+  }
