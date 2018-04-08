@@ -61,7 +61,7 @@ h5 {
 p {
     /* 24 */
     font-size: 18px; 
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 /*****************************************************/
@@ -203,6 +203,7 @@ p {
 .btn-custom:hover {
     color: white;
     box-shadow: 0 0 8px #404040;
+    cursor: pointer;
 }
 
 /*****************************************************/
@@ -278,3 +279,19 @@ p {
 .no-padding {
     padding: 2%;
   }
+
+  .my-custom {
+      margin-top: 8%;
+      margin-bottom: 8%;
+  }
+
+/*****************************************************/
+/* custom portfolio stuff */
+/*****************************************************/
+  .portfolio-cell a {
+      color: black;
+  }
+
+  .portfolio-cell a:hover {
+    color: #737373;
+}
