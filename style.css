@@ -5,7 +5,7 @@ body, html {
 	/* font stuff */
 	font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    color: #404040;
+    /* color: #404040; */
 }
 
 /*****************************************************/
@@ -87,11 +87,10 @@ p {
 }
 
 .box-shadow {
-    box-shadow: 0 0 5px #737373;
+    box-shadow: 0 0 4px #737373;
 }
 
 .down-arrow {
-    /* padding-bottom: 10px; */
     position: absolute;
     bottom: 0;
     left: 0;
@@ -149,13 +148,6 @@ p {
 	font-weight: 400;
 }
 
-/* navbar link color */
-/* .navbar-custom .navbar-nav .nav-link {
-    color: #d3f100;
-    font-weight: 400;
-	font-size: 20px;
-} */
-
 /* navbar active links */
 .navbar-custom .nav-item.active .nav-link {
     color: #9eb300;
@@ -187,7 +179,6 @@ p {
 /* custom button */
 .btn-custom {
     background-color: #d3f100;
-    color: #404040;
     width: 254px;
     height: 60px;
     border-radius: 5px;
@@ -196,14 +187,23 @@ p {
     font-weight: 600;
     border: none;
     outline: none;
-    box-shadow: 0 0 4px #404040;
-    /* box-shadow: -1px -1px 2px #404040; */
+    box-shadow: 0 0 3px #404040;
 }
 
 .btn-custom:hover {
-    color: white;
-    box-shadow: 0 0 8px #404040;
+    box-shadow: 0 0 4px #404040;
     cursor: pointer;
+}
+
+#to-top {
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+    transition-timing-function: ease;
+}
+
+#to-top:hover {
+    text-decoration: underline;
 }
 
 /*****************************************************/
@@ -250,31 +250,9 @@ p {
     text-decoration: none;
  }
 
- #to-top {
-     color: #404040;
-     font-size: 18px;
-     text-decoration: none;
-     transition-timing-function: ease;
- }
-
  /*****************************************************/
-/* custom footer stuff */
+/* custom padding, margin stuff */
 /*****************************************************/
-
-.description {
-    text-align: center;
-    padding: 25px;
-}
-
-/* .porfolio-pic {
-    background-image: url("img-sample.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    width: 200px;
-    height: auto;
-} */
 
 .no-padding {
     padding: 2%;
@@ -292,6 +270,11 @@ p {
       color: black;
   }
 
-  .portfolio-cell a:hover {
-    color: #737373;
+.portfolio-cell:hover {
+    box-shadow: 0 0 5px #404040;
+}
+
+.description {
+    text-align: center;
+    padding: 25px;
 }
