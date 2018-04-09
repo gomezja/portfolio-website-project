@@ -97,6 +97,11 @@ p {
     right: 0;
 }
 
+#contact-info {
+    text-align: center;
+    padding: 25px;
+}
+
 /*****************************************************/
 /* custom color stuff */
 /*****************************************************/
@@ -170,6 +175,10 @@ p {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+#img-homepage:hover {
+    box-shadow: 0 0 3px #404040;
 }
 
 /*****************************************************/
@@ -274,7 +283,8 @@ p {
     box-shadow: 0 0 5px #404040;
 }
 
-.description {
+.portfolio-description {
     text-align: center;
     padding: 25px;
+    height: 125px;
 }
