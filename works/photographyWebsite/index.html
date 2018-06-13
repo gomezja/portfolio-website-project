@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Photography - Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet"> 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- FULL SCREEN VIEW -->
+    <div class="full-view">
+        <div class="nav-bar">
+            <div class="nav-container">
+                <div class="to-left">
+                    <div class="nav-brand">
+                        <a class="brand-name" id="current-page" href="index.html">Lorem Photography</a>
+                    </div>
+                </div>
+
+                <div class="to-right">
+                    <div class="nav-content">
+                        <a class="dropdown-btn" id="dropdown-btn" href="#" onclick="dropdownClicked()">
+                            Portfolio<i class="icon fas fa-caret-down fa-sm" id="dropdown-icon" ></i>
+                        </a>
+                        <div class="dropdown-content" id="dropdown">
+                            <a href="gallery.html">Nature</a>
+                            <a href="gallery.html">City</a>
+                        </div>
+
+                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img class="img-slides" src="images/mountains_img.jpg">
+            <img class="img-slides" src="images/water_img.jpg">
+            <img class="img-slides" src="images/road_img.jpg">
+            
+            <div class="center"><h1>It Starts with a Vision</h1></div>
+    
+            <i class="arrow left-arrow fas fa-angle-left" onclick="changeSlide(-1)"></i>
+            <i class="arrow right-arrow fas fa-angle-right" onclick="changeSlide(1)"></i>
+
+            <div class="bottom indicator-left"><div class="carousel-indicator" onclick="goToSlide(0)"></div></div>
+            <div class="bottom indicator-center"><div class="carousel-indicator" onclick="goToSlide(1)"></div></div>
+            <div class="bottom indicator-right"><div class="carousel-indicator" onclick="goToSlide(2)"></div></div>
+        </div>
+    </div>
+
+    <!-- SECTION - NATURE PHOTOS -->
+    <div class="section">
+        <div class="content">
+            <div class="row">
+                <div class="col-6 center-content">
+                    <h2>Pullvinar dictum dapibus</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae possimus provident a doloremque.</p>
+                    <a class="button btn-1" href="gallery.html">Nature</a>
+                </div>
+
+                <!-- spacing -->
+                <div class="col-1"></div>
+
+                <div class="col-6 center-content">
+                    <img class="sample-image" src="images/dock_img.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION - QUOTE -->
+    <div class="section section-quote">
+        <div class="content">
+            <div class="row">
+                <p class="quote">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt iste pariatur temporibus obcaecati ipsa 
+                    eos enim deleniti ullam. Sapiente cupiditate quidem, distinctio esse dolor a optio ab corporis. Aspernatur, 
+                    saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt voluptas debitis voluptate assumenda 
+                    voluptatibus reprehenderit esse cumque recusandae provident ratione maiores.
+                    <br>
+                    <br>
+                    - Commodo Ornare
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION - CITY PHOTOS -->
+    <div class="section">
+        <div class="content">
+            <div class="row">
+                <div class="col-6 center-content">
+                    <h2>Arcu sit amet vulputate</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quae possimus provident a doloremque.</p>
+                    <a class="button btn-1" href="gallery.html">City</a>
+                </div>
+
+                <!-- spacing -->
+                <div class="col-1"></div>
+
+                <div class="col-6 center-content">
+                    <img class="sample-image" src="images/bench_img.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="content">
+        <div class="row">
+            <div class="col-company">
+                <div class="footer-content">
+                    <a class="main" href="index.html">Lorem Photography</a>
+
+                    <div class="company-info">
+                        <p>Sed eget pellentesque</p>
+                        <p>12345 Donect Id, Tortor</p>
+                    </div>
+
+                    <div class="company-info">
+                        <p>hel893 389 298 999</p>
+                        <p>curabitur@email.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-links">
+                <div class="footer-content">
+                    <a class="main" href="about.html">About</a>
+                    <a class="main" href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <div class="col-links">
+                <div class="footer-content">
+                    <p class="main">Portfolio</p>
+                    <a class="sub" href="gallery.html">Nature</a>
+                    <a class="sub" href="gallery.html">City</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="content">
+            <div class="row footer-closure">
+                <div class="copyright">
+                    <p>©2090 Estquam</p>
+                </div>
+
+                <div class="author">
+                    <p>Sed consectetur</p>
+                </div>
+
+                <div class="social-media">
+                    <a class="social-app" href="#">
+                        <div class="circle"><i class="fab fa-snapchat-ghost"></i></div>
+                    </a>
+
+                    <a class="social-app" href="#">
+                        <div class="circle"><i class="fab fa-instagram"></i></div>
+                    </a>
+                    
+                    <a class="social-app" href="#">
+                        <div class="circle"><i class="fab fa-twitter"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="myScripts.js"></script>
+</body>
+</html>
